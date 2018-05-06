@@ -4,20 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HeroService } from './hero.service';
-import { HeroesComponent } from './heroes.component';
+import { PuppyService } from './puppy.service';
+import { PuppiesComponent } from './puppies.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeroesComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule
-  ],
-  providers: [HeroService],
+  declarations: [AppComponent, PuppiesComponent],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
+  providers: [PuppyService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

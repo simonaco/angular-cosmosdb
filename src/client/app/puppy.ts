@@ -1,4 +1,4 @@
-export class Hero {
+export class Puppy {
   id: number;
   name: string;
   saying: string;
